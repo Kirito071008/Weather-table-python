@@ -38,9 +38,5 @@ async def getWeather():
        })
     df.plot(kind="line",x="data",y="temp",color="black",title="Temperature",fontsize=10)
     plt.show()
-    x = input("Continue?").lower()
-    if x == "yes" or x == "y":
-       getWeather()
-    else:
-       print("See you next time! :D")
+    print("See you next time! :D")
 asyncio.run(getWeather())
